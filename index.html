@@ -32,12 +32,10 @@
     <div id="container">
         <select id="dropdown" onchange="updateIframe()">
             <option value="">Select an embed</option>
-            <option value="https://www.example.com">Example 1</option>
-            <option value="https://www.wikipedia.org">Wikipedia</option>
-            <option value="https://www.youtube.com/embed/dQw4w9WgXcQ">YouTube Video</option>
+            <option value="https://w2.countingdownto.com/5725515">COMING IN 2025</option>
         </select>
         <div id="iframe-container">
-            <iframe id="iframe" src=""></iframe>
+            <iframe id="iframe" src="https://w2.countingdownto.com/5725515"></iframe>
         </div>
     </div>
 
@@ -45,7 +43,7 @@
         function updateIframe() {
             const dropdown = document.getElementById('dropdown');
             const iframe = document.getElementById('iframe');
-            iframe.src = dropdown.value;
+            iframe.src = dropdown.value ? dropdown.value : "https://w2.countingdownto.com/5725515";
         }
     </script>
 </body>
